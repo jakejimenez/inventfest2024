@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+  <title>BNS POC</title>
+
+</head>
+<body>
+<main class="container">
+  <div class="container" style="text-align: center;">
+    <h1>BNS POC</h1>
+  </div>
+  <br />
+  <div class="grid">
+    <div>
+      <h2>Notarize a File</h2>
+      <form action="" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fileWrite">File:</label>
+          <input class="form-control" id="fileWrite" name="fileWrite" type="file" />
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment:</label>
+          <input class="form-control" id="comment" type="text" name="comment" />
+        </div>
+        <button class="btn btn-primary btn-block" type="button" onclick="javascript:NotaryApp.handleFileAction(true);">Notarize</button>
+      </form>
+    </div>
+    <div>
+      <hr />
+      <h2>Result</h2>
+      <div id="status"></div>
+    </div>
+  </div>
+  <br />
+  <div class="grid">
+    <div>
+      <h2>Verify a File</h2>
+      <form action="" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fileRead">File:</label>
+          <input class="form-control" id="fileRead" name="fileRead" type="file" />
+        </div>
+        <button class="btn btn-success btn-block" type="button" onclick="javascript:NotaryApp.handleFileAction(false);">Verify</button>
+      </form>
+      <div id="resultRead"></div>
+    </div>
+  </div>
+</main>
+
+<!-- Ensure the correct path to your JS script -->
+<script src="./app.js"></script>
+</body>
+</html>
+
