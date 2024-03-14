@@ -26,6 +26,7 @@ Contents:
     * Offers independent verification through the UI or blockchain ledger.
     * Use Cases: Auditing, regulatory compliance, legal disputes.
 * Strengthens data authenticity, integrity, and security.
+* Extensible to an intuitive blockchain powered document management system.
 * Powered by the Ethereum blockchain for tamper-proof record-keeping.
 
 ### Key Takeaways
