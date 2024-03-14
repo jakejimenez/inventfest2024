@@ -40,7 +40,7 @@ Contents:
 
 ## Contributing
 
-**All contributions are welcomed** to improve the Blockchain Notary Service POC. The following instructions cover how to set up your dev environment for iterating on the service itself.
+**All contributions are welcomed** to improve this POC. The following instructions cover how to set up your dev environment for iterating on the service itself.
 
 (If you're looking forward to use the service as a user, please refer to the Usage section above.)
 

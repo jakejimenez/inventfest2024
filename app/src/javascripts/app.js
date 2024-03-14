@@ -43,7 +43,7 @@ const NotaryApp = {
                 await this.verifyDocument(normalizedHash);
             }
 
-            fileInput.value = ""; // Reset file input
+            fileInput.value = "";
         } catch (error) {
             statusContainer.innerHTML = `Error: ${error}`;
             console.error(error);
@@ -54,10 +54,8 @@ const NotaryApp = {
             const contractInstance = await NotaryContract.deployed();
             const transactionResult = await contractInstance.addEntry(fileHash, fileName, comment, { gas: 3000000 });
 
-            // Simplified success message, showing only transaction hash
             document.querySelector("#status").innerHTML = `Document notarization successful. Transaction ID: ${transactionResult.tx}`;
         } catch (error) {
-            // Simplified error handling from previous example
             if (error.message.includes('satisfies all conditions set by Solidity')) {
                 document.querySelector("#status").innerHTML = "Unable to complete the notarization: This document has already been notarized.";
             } else {
@@ -72,9 +70,8 @@ const NotaryApp = {
             const verificationResult = await contractInstance.entrySet(fileHash);
             const uploadedOn = new Date(verificationResult[1].toNumber() * 1000).toLocaleString();
 
-            // Formatting the output with HTML for cleaner presentation
             const verificationMessage = `
-      <div><strong>File Verified!</strong></div>
+      <div><strong><span style="color: darkolivegreen"> > File Verified < </span></strong></div>
       <div><strong>Filename:</strong> ${verificationResult[0]}</div>
       <div><strong>Uploaded on:</strong> ${uploadedOn}</div>
       <div><strong>Uploader:</strong> ${verificationResult[3]}</div>
