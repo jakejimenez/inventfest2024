@@ -30,11 +30,9 @@ Contents:
 
 ### Key Takeaways
 * Ethereum Blockchain: Ensures security and availability with no fraud potential.
-* User-Friendly Web Interface: For ease of access and efficient onboarding.
-* Customization Options: Tailor the service to fit your brand.
 * Global Verification: Independent checks from anywhere, at any time.
-* API for Integration: Embed BNS into existing applications seamlessly.
-* Integrated E-signatures: Facilitates complete document workflows.
+* Easy to Integrate: Embeddable into existing applications seamlessly either with whitelabel UI or API.
+* Possibility for Integrated E-signatures: Facilitates complete document workflows.
 
 ## Usage
 
